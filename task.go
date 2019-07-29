@@ -45,7 +45,7 @@ func (this *Task) PutQueue(s string) error {
 
 	return nil
 }
-func (this *Task) Start(checkTimerInterval, queueLen int) {
+func (this *Task) Start() {
 	//go
 	go this.runTask()
 }
